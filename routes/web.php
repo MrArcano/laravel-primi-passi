@@ -14,5 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $text = 'Hello World - from web.php';
+
+    // M1
+    // return view('home', ['text'=> $text]);
+
+    // M2
+    // $data = [
+    //     'text' => $text,
+    //     ];
+    // return view('home', $data);
+
+    // M3
+    return view('home',compact('text'));
+});
+
+Route::get('/about', function () {
+    return view('about');
 });

@@ -12,7 +12,6 @@
         <li><a href="/about">About</a></li>
     </ul>
 
-    <h1>Home - Laravel</h1>
-    <p> {{ $text }} </p>
+    <h1>About - Laravel</h1>
 </body>
 </html>
